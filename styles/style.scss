@@ -1,0 +1,53 @@
+@import "./variables.scss";
+
+li {
+  list-style-type: none;
+}
+
+.header {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  border-bottom: 1px solid $secondary-color;
+  &__navigation {
+    display: flex;
+    padding: 16px 24px;
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+
+    &--links {
+      display: flex;
+      gap: 20px;
+    }
+
+    &--action {
+      display: none;
+      gap: 20px;
+      @media (min-width: $tablet-width) {
+        display: flex;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+.services {
+  width: 100%;
+  &__header {
+    padding-left: 12px;
+    padding-top: 24px;
+    border-left: 4px solid $secondary-color;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    font-weight: 1000;
+  }
+  &__swiper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
