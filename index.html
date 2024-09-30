@@ -11,47 +11,31 @@
     <div id="app">
       <div class="header">
         <ul class="header__navigation">
-          <li class="header__icon">
-            <img src="icons/burger.svg" />
-          </li>
-          <li class="header__logo">
-            <img src="icons/logo.svg" />
-          </li>
-          <li class="header__divider"><img src="icons/divider.svg" /></li>
+          <div class="header__navigation--left">
+            <li class="header__icon"><img src="icons/burger.svg" /></li>
+            <li class="header__logo"><img src="icons/logo.svg" /></li>
+            <li class="header__divider"><img src="icons/divider.svg" /></li>
+          </div>
           <div class="header__navigation--links">
-            <li class="header__repair"><img src="icons/repair.svg" /></li>
-            <li class="header__icon">
-              <img src="icons/checkstatus.svg" />
-            </li>
             <div class="header__navigation--action">
               <li class="header__icon"><img src="icons/call.svg" /></li>
               <li class="header__icon"><img src="icons/chat.svg" /></li>
-              <li class="header__icon">
-                <img src="icons/profile.svg" />
-              </li>
+              <li class="header__icon"><img src="icons/profile.svg" /></li>
+              <li class="header__divider"><img src="icons/divider.svg" /></li>
             </div>
+            <li class="header__repair"><img src="icons/repair.svg" /></li>
+            <li class="header__icon"><img src="icons/checkstatus.svg" /></li>
           </div>
         </ul>
       </div>
       <div class="services">
-        <div class="services__header">
-        Услуги и сервисы
-        </div>
-        <div class="services__swiper">
-          <ul>
-            <li>Ремонтируемые устройства</li>
-            <li>Дополнительные услуги</li>
-            <li>Цена на услуги</li>
-            <li>Специальные цены</li>
-          </ul>
-        </div>
-        <div class="services__info">
-          Мы являемся авторизованным <br />
-          сервисным центром по ремонту техники <br />
-          Dell. Только у нас вы можете <br />
-          отремонтировать свой ноутбук Dell с <br />
-          официальной гарантией производителя.
-        </div>
+        <div class="services__header">Услуги и сервисы</div>
+        <ul class="services__swiper">
+          <li class="services__swiper--button">Ремонтируемые устройства</li>
+          <li class="services__swiper--button">Дополнительные услуги</li>
+          <li class="services__swiper--button">Цена на услуги</li>
+          <li class="services__swiper--button">Специальные цены</li>
+        </ul>
       </div>
     </div>
   </body>
