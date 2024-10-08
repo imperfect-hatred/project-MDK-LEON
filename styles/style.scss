@@ -12,6 +12,9 @@ li {
   background: rgb(255, 255, 255);
   width: 100%;
   border-bottom: 1px solid $secondary-color;
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
   &__navigation {
     display: flex;
     padding: 16px 24px;
@@ -41,9 +44,6 @@ li {
       }
     }
   }
-  @media (min-width: $desktop-width) {
-    display: none;
-  }
 }
 .services {
   &__header {
@@ -68,6 +68,50 @@ li {
       padding: 10px;
       border-radius: 6px;
       font-size: 16px;
+    }
+  }
+}
+
+.desktop__header {
+  width: 300px;
+  height: 100%;
+  &--top {
+    @media (min-width: $desktop-width) {
+      padding: 22px 30px;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  &--mid {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    padding-left: 26px;
+  }
+  &--bot {
+    padding-top: 241px;
+    &_social-media {
+      display: flex;
+      flex-direction: row;
+      gap: 16px;
+      padding-left: 26px;
+    }
+    &_mail {
+      padding-left: 26px;
+    }
+    &_number {
+      padding-left: 26px;
+      font-weight: bold;
+      font-size: 23px;
+      padding-top: 0;
+    }
+    &_lang {
+      display: flex;
+      flex-direction: row;
+      padding-left: 26px;
+      gap: 7px;
     }
   }
 }
