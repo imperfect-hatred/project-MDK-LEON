@@ -1,15 +1,68 @@
 @import "./variables.scss";
+@font-face {
+  font-family: TT-Lakes;
+  src: url(../fonts/TTLakes-Medium.ttf);
+}
 
-.app {
-  background: #f8f8f8;
+#app {
+  background-color: #f8f8f8;
   width: 100%;
+  font-family: TT-Lakes;
 }
 li {
   list-style-type: none;
 }
+.desktop__header {
+  width: 300px;
+  height: 100%;
+  background-color: white;
+  &--top {
+    padding: 22px 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &--mid {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    padding-left: 26px;
+  }
+  &--bot {
+    padding-top: 241px;
+    &_social-media {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 16px;
+      padding-left: 26px;
+    }
+    &_mail {
+      padding-left: 26px;
+    }
+    &_number {
+      padding-left: 26px;
+      font-weight: bold;
+      font-size: 23px;
+    }
+    &_lang {
+      display: flex;
+      flex-direction: row;
+      padding-left: 26px;
+      gap: 7px;
+      padding-top: 30px;
+    }
+  }
+}
+@media (max-width: $desktop-width) {
+  .desktop__header {
+    display: none;
+  }
+}
 
 .header {
-  background: rgb(255, 255, 255);
+  background: white;
   width: 100%;
   border-bottom: 1px solid $secondary-color;
   @media (min-width: $desktop-width) {
@@ -25,7 +78,7 @@ li {
 
     &--left {
       display: flex;
-      gap: 20px;
+      gap: 10px;
       align-items: center;
     }
 
@@ -68,50 +121,6 @@ li {
       padding: 10px;
       border-radius: 6px;
       font-size: 16px;
-    }
-  }
-}
-
-.desktop__header {
-  width: 300px;
-  height: 100%;
-  &--top {
-    @media (min-width: $desktop-width) {
-      padding: 22px 30px;
-      display: flex;
-      align-items: center;
-      flex-direction: row;
-      justify-content: space-between;
-    }
-  }
-  &--mid {
-    display: flex;
-    flex-direction: column;
-    gap: 28px;
-    padding-left: 26px;
-  }
-  &--bot {
-    padding-top: 241px;
-    &_social-media {
-      display: flex;
-      flex-direction: row;
-      gap: 16px;
-      padding-left: 26px;
-    }
-    &_mail {
-      padding-left: 26px;
-    }
-    &_number {
-      padding-left: 26px;
-      font-weight: bold;
-      font-size: 23px;
-      padding-top: 0;
-    }
-    &_lang {
-      display: flex;
-      flex-direction: row;
-      padding-left: 26px;
-      gap: 7px;
     }
   }
 }
