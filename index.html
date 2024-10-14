@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css" />
+    <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css" />
     <link rel="stylesheet" href="./styles/style.scss" />
     <title>сайт</title>
   </head>
@@ -12,10 +12,10 @@
       <div class="desktop__header">
         <ul class="desktop__header--top">
           <li class="header__logo">
-            <img src="icons/logo.svg" />
+            <img src="icons/logo.svg" alt="cps" />
           </li>
-          <li>
-            <img src="icons/search.svg" alt="" />
+          <li class="icon">
+            <img src="icons/search.svg" alt="поиск" />
           </li>
         </ul>
         <ul class="desktop__header--mid">
@@ -30,9 +30,9 @@
         </ul>
         <div class="desktop__header--bot">
           <ul class="desktop__header--bot_social-media">
-            <li><img src="icons/call.svg" alt="" /></li>
-            <li><img src="icons/chat.svg" alt="" /></li>
-            <li><img src="icons/profile.svg" alt="" /></li>
+            <li class="icon"><img src="icons/call.svg" alt="звонок" /></li>
+            <li class="icon"><img src="icons/chat.svg" alt="чат" /></li>
+            <li class="icon"><img src="icons/profile.svg" alt="профиль" /></li>
           </ul>
           <p class="desktop__header--bot_mail">mail@cps.com</p>
           <p class="desktop__header--bot_number">8 800 890 8900</p>
@@ -46,21 +46,25 @@
       <div class="header">
         <ul class="header__navigation">
           <div class="header__navigation--left">
-            <li class="header__icon">
-              <img src="icons/burger.svg" />
+            <li class="icon">
+              <img src="icons/burger.svg" alt="меню" />
             </li>
-            <li class="header__logo"><img src="icons/logo.svg" /></li>
+            <li class="header__logo"><img src="icons/logo.svg" alt="cps" /></li>
             <li class="header__divider"><img src="icons/divider.svg" /></li>
           </div>
           <div class="header__navigation--links">
             <div class="header__navigation--action">
-              <li class="header__icon"><img src="icons/call.svg" /></li>
-              <li class="header__icon"><img src="icons/chat.svg" /></li>
-              <li class="header__icon"><img src="icons/profile.svg" /></li>
+              <li class="icon"><img src="icons/call.svg" alt="звонок" /></li>
+              <li class="icon"><img src="icons/chat.svg" alt="чат" /></li>
+              <li class="icon">
+                <img src="icons/profile.svg" alt="профиль" />
+              </li>
               <li class="header__divider"><img src="icons/divider.svg" /></li>
             </div>
-            <li class="header__repair"><img src="icons/repair.svg" /></li>
-            <li class="header__icon"><img src="icons/checkstatus.svg" /></li>
+            <li class="icon"><img src="icons/repair.svg" alt="починка" /></li>
+            <li class="icon">
+              <img src="icons/checkstatus.svg" alt="чекстатус" />
+            </li>
           </div>
         </ul>
       </div>
@@ -75,4 +79,5 @@
       </div> -->
     </div>
   </body>
+  <script src="scripts/main.js"></script>
 </html>
