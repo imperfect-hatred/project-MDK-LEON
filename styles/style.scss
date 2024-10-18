@@ -30,6 +30,8 @@ li {
 
 .desktop__header {
   position: fixed;
+  display: flex;
+  flex-direction: column;
   z-index: 10;
   width: 300px;
   height: 100%;
