@@ -6,10 +6,9 @@
 
 #app {
   background-color: #f8f8f8;
-  width: 100%;
-  height: 100%;
   font-family: TT-Lakes;
 }
+
 li {
   list-style-type: none;
 }
@@ -23,11 +22,20 @@ li {
   border-radius: 50%;
 }
 
+.exit {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
 .desktop__header {
+  position: fixed;
+  z-index: 10;
   width: 300px;
   height: 100%;
   background-color: white;
   &--top {
+    margin: 0;
     padding: 22px 30px;
     display: flex;
     align-items: center;
@@ -54,8 +62,8 @@ li {
     }
     &_number {
       padding-left: 26px;
-      font-weight: bold;
-      font-size: 23px;
+      font-weight: 900;
+      font-size: 24px;
     }
     &_lang {
       display: flex;
@@ -63,6 +71,8 @@ li {
       padding-left: 26px;
       gap: 7px;
       padding-top: 30px;
+      font-size: 16px;
+      font-weight: 500;
     }
   }
 }
@@ -70,6 +80,12 @@ li {
   .desktop__header {
     display: none;
   }
+}
+
+.overlay__open {
+  display: flex;
+  top: 0;
+  left: 0;
 }
 
 .header {
