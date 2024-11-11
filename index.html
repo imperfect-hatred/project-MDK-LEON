@@ -11,29 +11,33 @@
     <div id="app">
       <div class="desktop__header">
         <ul class="desktop__header--top">
-          <a class="exit" href="#">
-            <li class="icon">
-              <img src="icons/exit.svg" alt="выход" />
+          <div class="desktop__header--top-left">
+            <a href="#" class="exit">
+              <li class="icon">
+                <img src="icons/exit.svg" alt="выход" />
+              </li>
+            </a>
+            <li class="header__logo">
+              <img src="icons/logo.svg" alt="cps" />
             </li>
-          </a>
-          <li class="header__logo">
-            <img src="icons/logo.svg" alt="cps" />
-          </li>
-          <a href="#">
-            <li class="icon">
-              <img src="icons/search.svg" alt="поиск" />
-            </li>
-          </a>
+          </div>
+          <div class="desktop__header--top-right">
+            <a href="#">
+              <li class="icon">
+                <img src="icons/search.svg" alt="поиск" />
+              </li>
+            </a>
+          </div>
         </ul>
         <ul class="desktop__header--mid">
-          <li>Ремонт техники</li>
-          <li>Услуги и сервисы</li>
-          <li>Корпоративным клиентам</li>
-          <li>Продавцам техники</li>
-          <li>Партнерам</li>
-          <li>Производителям</li>
-          <li>Наши сервисные центры</li>
-          <li>Контакты</li>
+          <li><a href="#">Ремонт техники</a></li>
+          <li><a href="#">Услуги и сервисы</a></li>
+          <li><a href="#">Корпоративным клиентам</a></li>
+          <li><a href="#">Продавцам техники</a></li>
+          <li><a href="#">Партнерам</a></li>
+          <li><a href="#">Производителям</a></li>
+          <li><a href="#">Наши сервисные центры</a></li>
+          <li><a href="#">Контакты</a></li>
         </ul>
         <div class="desktop__header--bot">
           <ul class="desktop__header--bot_social-media">
@@ -53,12 +57,12 @@
               </li>
             </a>
           </ul>
-          <p class="desktop__header--bot_mail">mail@cps.com</p>
+          <p class="desktop__header--bot_mail"><a href="#">mail@cps.com</a></p>
           <p class="desktop__header--bot_number">8 800 890 8900</p>
           <ul class="desktop__header--bot_lang">
-            <li>RU</li>
-            <li>EN</li>
-            <li>CH</li>
+            <li><a href="#">RU</a></li>
+            <li><a href="#">EN</a></li>
+            <li><a href="#">CH</a></li>
           </ul>
         </div>
       </div>
@@ -105,15 +109,91 @@
           </div>
         </ul>
       </div>
-      <!-- <div class="services">
-        <div class="services__header">Услуги и сервисы</div>
-        <ul class="services__swiper">
-          <li class="services__swiper--button">Ремонтируемые устройства</li>
-          <li class="services__swiper--button">Дополнительные услуги</li>
-          <li class="services__swiper--button">Цена на услуги</li>
-          <li class="services__swiper--button">Специальные цены</li>
+      <div class="main__menu">
+        <div class="main__menu--header">
+          <img src="icons/highlight.svg" alt="" />
+          <p>Услуги и сервисы</p>
+        </div>
+        <div class="main__menu--slider">
+          <div class="main__menu--slider--item">
+            <input
+              class="main__menu--slider-radio-button"
+              type="radio"
+              id="radio_brands"
+              name="selector"
+              checked
+            />
+            <label for="radio_brands" class="main__menu--slider--item-label">
+              <p>Ремонтируемые бренды</p>
+            </label>
+          </div>
+          <div class="main__menu--slider--item">
+            <input
+              class="main__menu--slider-radio-button"
+              type="radio"
+              id="radio_devices"
+              name="selector"
+            />
+            <label for="radio_devices" class="main__menu--slider--item-label">
+              <p>Дополнительные услуги</p>
+            </label>
+          </div>
+          <div class="main__menu--slider--item">
+            <input
+              class="main__menu--slider-radio-button"
+              type="radio"
+              id="radio_services"
+              name="selector"
+            />
+            <label for="radio_services" class="main__menu--slider--item-label">
+              <p>Цены на&nbsp;услуги</p>
+            </label>
+          </div>
+          <div class="main__menu--slider--item">
+            <input
+              class="main__menu--slider-radio-button"
+              type="radio"
+              id="radio_address"
+              name="selector"
+            />
+            <label for="radio_address" class="main__menu--slider--item-label">
+              <p>Адреса сервисных центров</p>
+            </label>
+          </div>
+          <div class="main__menu--slider--item">
+            <input
+              class="main__menu--slider-radio-button"
+              type="radio"
+              id="radio_prices"
+              name="selector"
+            />
+            <label for="radio_prices" class="main__menu--slider--item-label">
+              <p>Специальные цены</p>
+            </label>
+          </div>
+          <div class="main__menu--slider--item">
+            <input
+              class="main__menu--slider-radio-button"
+              type="radio"
+              id="radio_feedback"
+              name="selector"
+            />
+            <label for="radio_feedback" class="main__menu--slider--item-label">
+              <p>Отзывы</p>
+            </label>
+          </div>
+        </div>
+        <ul class="main__content">
+          <li class="main__content--text">
+            Мы являемся авторизованным сервисным центром по ремонту техники
+            Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+            официальной гарантией производителя.
+          </dli>
+          <li class="main__content--img">
+            <img src="../img/pic.png" alt="" />
+          </li>
         </ul>
-      </div> -->
+      </div>
     </div>
   </body>
   <script src="scripts/main.js"></script>
