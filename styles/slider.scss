@@ -1,3 +1,4 @@
+@import "./variables.scss";
 .main__menu--slider::-webkit-scrollbar {
   width: 0;
 }
@@ -19,13 +20,17 @@
   scrollbar-width: none;
 }
 
-@media (min-width: 767px) {
+.main__menu--slider {
+  display: flex;
+  padding-left: 20px;
+}
+
+@media (min-width: $tablet-width) {
   .main__menu--slider {
     padding: 0 24px;
   }
 }
-
-@media (min-width: 1119px) {
+@media (min-width: $desktop-width) {
   .main__menu--slider {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
@@ -34,7 +39,6 @@
     flex-wrap: wrap;
   }
 }
-
 .main__menu--slider--item {
   padding: 0px;
   display: -webkit-box;
@@ -51,20 +55,20 @@
   -webkit-transition: 2s;
   transition: 2s;
 }
-
 .main__menu--slider--item-label {
-  padding: 0px 16px;
+  padding: 8px 16px;
   border: 3px solid transparent;
   font-size: 16px;
   cursor: pointer;
 }
 
 .main__menu--slider--item-label:hover {
-  border: 3px solid #b8ffec;
+  border: 3px solid #f1d1da;
+  color: $main-color;
   border-radius: 6px;
   background-color: #ffffff;
-  -webkit-transition: background-color 1s, border 1s;
-  transition: background-color 1s, border 1s;
+  -webkit-transition: background-color 1s, border 1s, color 1s;
+  transition: background-color 1s, border 1s, color 1s;
 }
 
 .main__menu--slider-radio-button {
