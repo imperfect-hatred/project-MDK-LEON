@@ -274,6 +274,38 @@ li {
   }
 }
 
+#swiper-price {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.swiper-transform {
+  display: none;
+  @media (min-width: $tablet-width) {
+    display: block;
+    &__header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-right: 110px;
+      color: #7e7e82;
+      &--item {
+        width: 10%;
+      }
+    }
+    &__main-content {
+      background-color: white;
+      display: flex;
+      height: 80px;
+      justify-content: space-between;
+      align-items: center;
+      border: #7e7e82;
+      padding-right: 20px;
+    }
+  }
+}
+
 .swiper-pagination-bullet {
   width: 12px !important;
   height: 12px !important;
