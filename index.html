@@ -9,6 +9,9 @@
   </head>
   <body>
     <div id="app">
+      <div class="opacity-background">
+
+      </div>
       <div class="desktop__header">
         <ul class="desktop__header--top">
           <div class="desktop__header--top-left">
@@ -30,14 +33,14 @@
           </div>
         </ul>
         <ul class="desktop__header--mid">
-          <li><a href="#">Ремонт техники</a></li>
-          <li><a href="#">Услуги и сервисы</a></li>
-          <li><a href="#">Корпоративным клиентам</a></li>
-          <li><a href="#">Продавцам техники</a></li>
-          <li><a href="#">Партнерам</a></li>
-          <li><a href="#">Производителям</a></li>
-          <li><a href="#">Наши сервисные центры</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li class="desktop__header--mid-item"><a href="#">Ремонт техники</a></li>
+          <li class="desktop__header--mid-item"><a href="#">Услуги и сервисы</a></li>
+          <li class="desktop__header--mid-item"><a href="#">Корпоративным клиентам</a></li>
+          <li class="desktop__header--mid-item"><a href="#">Продавцам техники</a></li>
+          <li class="desktop__header--mid-item"><a href="#">Партнерам</a></li>
+          <li class="desktop__header--mid-item"><a href="#">Производителям</a></li>
+          <li class="desktop__header--mid-item"><a href="#">Наши сервисные центры</a></li>
+          <li class="desktop__header--mid-item"><a href="#">Контакты</a></li>
         </ul>
         <div class="desktop__header--bot">
           <ul class="desktop__header--bot_social-media">
@@ -60,9 +63,9 @@
           <p class="desktop__header--bot_mail"><a href="#">mail@cps.com</a></p>
           <p class="desktop__header--bot_number">8 800 890 8900</p>
           <ul class="desktop__header--bot_lang">
-            <li><a href="#">RU</a></li>
-            <li><a href="#">EN</a></li>
-            <li><a href="#">CH</a></li>
+            <li class="desktop__header--mid-item"><a href="#">RU</a></li>
+            <li class="desktop__header--mid-item"><a href="#">EN</a></li>
+            <li class="desktop__header--mid-item"><a href="#">CH</a></li>
           </ul>
         </div>
       </div>
@@ -184,26 +187,40 @@
           </div>
         </div>
         <ul class="main__content">
-          <li class="main__content--text">
-            Мы являемся авторизованным сервисным центром по ремонту техники
-            Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
-            официальной гарантией производителя.
-          </li>
-          <li class="main__content--text-tablet">
-            Мы являемся авторизованным сервисным центром по ремонту техники
-            Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
-            официальной гарантией производителя. Мы успешно работаем с 1992 года
-            и заслужили репутацию надежного партнера
-          </li>
-          <li class="main__content--text-desktop">
-            Мы являемся авторизованным сервисным центром по ремонту техники
-            Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
-            официальной гарантией производителя. Мы успешно работаем с 1992 года
+          <ul class="read">
+            <li class="main__content--text">
+              Мы являемся авторизованным сервисным центром по ремонту техники
+              Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+              официальной гарантией производителя.
+            </li>
+            <li class="main__content--text-tablet">
+              Мы являемся авторизованным сервисным центром по ремонту техники
+              Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+              официальной гарантией производителя.
+            </li>
+            <li class="main__content--text-desktop">
+              Мы являемся авторизованным сервисным центром по ремонту техники
+              Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+              официальной гарантией производителя.
+            </li>
+            <ul class="read-more">
+              <a href="#" id="readMoreLink">
+                <li><img src="./icons/read.svg" alt=""></li>
+                <li>Читать далее</li>
+              </a>
+            </ul>
+          <p id="moreText" style="display: none;">Мы успешно работаем с 1992 года
             и заслужили репутацию надежного партнера, что подтверждает большое
             количество постоянных клиентов. Мы гордимся тем, что к нам
             обращаются по рекомендациям и, в свою очередь, советуют нас родным и
-            близким.
-          </li>
+            близким.</p>
+            <ul class="read-less">
+              <a href="#" id="readLessLink">
+                <li class="revers"><img src="./icons/revers.svg" alt=""></li>
+                <li>Скрыть</li>
+              </a>
+            </ul>
+          </ul>
           <li class="main__content--img">
             <img src="../img/pic.png" alt="" />
           </li>
@@ -293,7 +310,7 @@
                 <p>Ремонт ноутбуков</p>
               </div> 
               <div class="right-button"> 
-                <div class="circle"><a href="#"><img src="./icons/dropdown.svg" alt=""></a></div> 
+                <div class="circle-tech"><a href="#"><img src="./icons/dropdown.svg" alt=""></a></div> 
               </div> 
             </div> 
             <div class="swiper-slide mySwiper-slide__tech"> 
@@ -301,7 +318,7 @@
                 <p>Ремонт планшетов</p>
               </div> 
               <div class="right-button"> 
-                <div class="circle"><a href="#"><img src="./icons/dropdown.svg" alt=""></a></div> 
+                <div class="circle-tech"><a href="#"><img src="./icons/dropdown.svg" alt=""></a></div> 
               </div> 
             </div> 
             <div class="swiper-slide mySwiper-slide__tech"> 
@@ -309,7 +326,7 @@
                 <p>Ремонт ПК</p>
               </div> 
               <div class="right-button"> 
-                <div class="circle"><a href="#"><img src="./icons/dropdown.svg" alt=""></a></div> 
+                <div class="circle-tech"><a href="#"><img src="./icons/dropdown.svg" alt=""></a></div> 
               </div> 
             </div> 
             <div class="swiper-slide mySwiper-slide__tech"> 
@@ -317,7 +334,7 @@
                 <p>Ремонт мониторов</p>
               </div> 
               <div class="right-button"> 
-                <div class="circle"><a href="#"><img src="./icons/dropdown.svg" alt=""></a></div> 
+                <div class="circle-tech"><a href="#"><img src="./icons/dropdown.svg" alt=""></a></div> 
               </div> 
             </div> 
           </div>
@@ -328,152 +345,175 @@
           <div class="swiper-wrapper"> 
             <div class="swiper-slide mySwiper-slide__price"> 
               <div class="slider-text-list">
-                Ремонтные услуги <br>
-                
-                Диагностика <br>
-                
-                Цена <br>
-                Бесплатно <br>
-      
-                Срок <br>
-                30 мин
+                <div class="slider-text-list--item">
+                  <div class="slider-text-list__h">Ремонтные услуги</div>
+                  <p class="slider-text-list__p">Замена дисплея</p>
+                </div>
+                <div class="slider-text-list--item">
+                  <div class="slider-text-list__h">Цена</div>
+                  <p class="slider-text-list__p">1 000 ₽</p>
+                </div>
+                <div class="slider-text-list--item">
+                  <div class="slider-text-list__h">Срок</div>
+                  <p class="slider-text-list__p">30-120 мин</p>
+                </div>
               </div>
-              <div class="order"> 
-                <a href="#"><img src="./icons/order.svg" alt=""></a>
-              </div>
+                <a href="#" class="order-swiper">
+                  заказать
+                  <img src="./icons/arrow.svg" alt="">
+                </a>
             </div> 
             <div class="swiper-slide mySwiper-slide__price"> 
               <div class="slider-text-list">
-                Ремонтные услуги <br>
-                
-                Замена дисплея <br>
-                
-                Цена <br>
-                1 000 ₽ <br>
-      
-                Срок <br>
-                30-120 мин
+                <div class="slider-text-list--item">
+                  <div class="slider-text-list__h">Ремонтные услуги</div>
+                  <p class="slider-text-list__p">Замена полифонического динамика</p>
+                </div>
+                <div class="slider-text-list--item">
+                  <div class="slider-text-list__h">Цена</div>
+                  <p class="slider-text-list__p">1 000 ₽</p>
+                </div>
+                <div class="slider-text-list--item">
+                  <div class="slider-text-list__h">Срок</div>
+                  <p class="slider-text-list__p">30-120 мин</p>
+                </div>
               </div>
-              <div class="order"> 
-                <a href="#"><img src="./icons/order.svg" alt=""></a>
-              </div>
-            </div> 
+                <a href="#" class="order-swiper">
+                  заказать
+                  <img src="./icons/arrow.svg" alt="">
+                </a>
+            </div>  
             <div class="swiper-slide mySwiper-slide__price"> 
               <div class="slider-text-list">
-                Ремонтные услуги <br>
-                
-                Замена полифонического динамика <br>
-                
-                Цена <br>
-                1 000 ₽ <br>
-      
-                Срок <br>
-                30-120 мин
+                <div class="slider-text-list--item">
+                  <div class="slider-text-list__h">Ремонтные услуги</div>
+                  <p class="slider-text-list__p">Тестирование с выдачей технического заключения</p>
+                </div>
+                <div class="slider-text-list--item">
+                  <div class="slider-text-list__h">Цена</div>
+                  <p class="slider-text-list__p">1 000 ₽</p>
+                </div>
+                <div class="slider-text-list--item">
+                  <div class="slider-text-list__h">Срок</div>
+                  <p class="slider-text-list__p">30-120 мин</p>
+                </div>
               </div>
-              <div class="order"> 
-                <a href="#"><img src="./icons/order.svg" alt=""></a>
-              </div>
-            </div> 
+                <a href="#" class="order-swiper">
+                  заказать
+                  <img src="./icons/arrow.svg" alt="">
+                </a>
+            </div>  
             <div class="swiper-slide mySwiper-slide__price"> 
               <div class="slider-text-list">
-                Ремонтные услуги <br>
-                
-                Тестирование с выдачей <br>
-                технического заключения <br>
-                
-                Цена <br>
-                1 000 ₽ <br>
-      
-                Срок <br>
-                30-120 мин
+                <div class="slider-text-list--item">
+                  <div class="slider-text-list__h">Ремонтные услуги</div>
+                  <p class="slider-text-list__p">Замена программного обеспечения</p>
+                </div>
+                <div class="slider-text-list--item">
+                  <div class="slider-text-list__h">Цена</div>
+                  <p class="slider-text-list__p">1 000 ₽</p>
+                </div>
+                <div class="slider-text-list--item">
+                  <div class="slider-text-list__h">Срок</div>
+                  <p class="slider-text-list__p">30-120 мин</p>
+                </div>
               </div>
-              <div class="order"> 
-                <a href="#"><img src="./icons/order.svg" alt=""></a>
-              </div>
-            </div>
-            <div class="swiper-slide mySwiper-slide__price"> 
-              <div class="slider-text-list">
-                Ремонтные услуги <br>
-                
-                Замена программного обеспечения <br>
-                
-                Цена <br>
-                1 000 ₽ <br>
-      
-                Срок <br>
-                30-120 мин
-              </div>
-              <div class="order"> 
-                <a href="#"><img src="./icons/order.svg" alt=""></a>
-              </div>
+                <a href="#" class="order-swiper">
+                  заказать
+                  <img src="./icons/arrow.svg" alt="">
+                </a>
             </div> 
           </div>
-          <div class="swiper-pagination"></div>
+          <div class="swiper-pagination"></div> 
         </div>
         <div class="swiper-transform">
-          <ul class="swiper-transform__header">
-            <li class="swiper-transform__header--item">Ремонтные⠀услуги</li>
-            <li>Цена</li>
-            <li>Срок</li>
-            <li>⠀</li>
-          </ul>
-          <ul class="swiper-transform__main-content">
-            <li class="swiper-transform__main-content--item">Диагностика</li>
-            <li class="swiper-transform__main-content--item">Бесплатно</li>
-            <li class="swiper-transform__main-content--item">30 мин</li>
-            <li class="swiper-transform__main-content--item">
-              <a href="">
-              <img src="./icons/order.svg" alt="">
-              </a>
-            </li>
-          </ul>
-          <ul class="swiper-transform__main-content">
-            <li class="swiper-transform__main-content--item">Замена дисплея</li>
-            <li class="swiper-transform__main-content--item">1 000 ₽</li>
-            <li class="swiper-transform__main-content--item">30-120 мин</li>
-            <li class="swiper-transform__main-content--item">
-              <a href="">
-              <img src="./icons/order.svg" alt="">
-              </a>
-            </li>
-          </ul>
-          <ul class="swiper-transform__main-content">
-            <li class="swiper-transform__main-content--item">Замена полифонического динамика</li>
-            <li class="swiper-transform__main-content--item">1 000 ₽</li>
-            <li class="swiper-transform__main-content--item">30-120 мин</li>
-            <li class="swiper-transform__main-content--item">
-              <a href="">
-              <img src="./icons/order.svg" alt="">
-              </a>
-            </li>
-          </ul>
-          <ul class="swiper-transform__main-content">
-            <li class="swiper-transform__main-content--item">Тестирование с выдачей технического заключения</li>
-            <li class="swiper-transform__main-content--item">1 000 ₽</li>
-            <li class="swiper-transform__main-content--item">30-120 мин</li>
-            <li class="swiper-transform__main-content--item">
-              <a href="">
-              <img src="./icons/order.svg" alt="">
-              </a>
-            </li>
-          </ul>
-          <ul class="swiper-transform__main-content">
-            <li class="swiper-transform__main-content--item">Замена программного обеспечения</li>
-            <li class="swiper-transform__main-content--item">1 000 ₽</li>
-            <li class="swiper-transform__main-content--item">30-120 мин</li>
-            <li class="swiper-transform__main-content--item">
-              <a href="">
-              <img src="./icons/order.svg" alt="">
-              </a>
-            </li>
-          </ul>
+          <table class="swiper-transform__header">
+            <thead class="swiper-transform__header--container">
+              <tr class="swiper-transform__header--list">
+                <th>Ремонтные⠀услуги</th>
+                <th>Цена</th>
+                <th>Срок</th>
+                <th>⠀</th>
+              </tr>
+            </thead>
+            <tbody class="swiper-transform-body">
+              <tr class="swiper-transform__main-content">
+                <td class="swiper-transform__main-content--item">Диагностика</td>
+                <td class="swiper-transform__main-content--item">Бесплатно</td>
+                <td class="swiper-transform__main-content--item">30 мин</td>
+                <td class="swiper-transform__main-content--item">
+                  <a href="" class="order">
+                    заказать
+                    <img src="./icons/arrow.svg" alt="">
+                  </a>
+                </td>
+              </tr>
+              <tr class="swiper-transform__main-content">
+                <td class="swiper-transform__main-content--item">Замена дисплея</td>
+                <td class="swiper-transform__main-content--item">1 000 ₽</td>
+                <td class="swiper-transform__main-content--item">30-120 мин</td>
+                <td class="swiper-transform__main-content--item">
+                  <a href="" class="order">
+                    заказать
+                    <img src="./icons/arrow.svg" alt="">
+                  </a>
+                </td>
+              </tr>
+              <tr class="swiper-transform__main-content">
+                <td class="swiper-transform__main-content--item">Замена полифонического динамика</td>
+                <td class="swiper-transform__main-content--item">1 000 ₽</td>
+                <td class="swiper-transform__main-content--item">30-120 мин</td>
+                <td class="swiper-transform__main-content--item">
+                  <a href="" class="order">
+                    заказать
+                    <img src="./icons/arrow.svg" alt="">
+                  </a>
+                </td>
+              </tr>
+              <tr class="swiper-transform__main-content">
+                <td class="swiper-transform__main-content--item">Тестирование с выдачей технического заключения</td>
+                <td class="swiper-transform__main-content--item">1 000 ₽</td>
+                <td class="swiper-transform__main-content--item">30-120 мин</td>
+                <td class="swiper-transform__main-content--item">
+                  <a href="" class="order">
+                    заказать
+                    <img src="./icons/arrow.svg" alt="">
+                  </a>
+                </td>
+              </tr>
+              <tr class="swiper-transform__main-content">
+                <td class="swiper-transform__main-content--item">Замена программного обеспечения</td>
+                <td class="swiper-transform__main-content--item">1 000 ₽</td>
+                <td class="swiper-transform__main-content--item">30-120 мин</td>
+                <td class="swiper-transform__main-content--item">
+                  <a href="" class="order">
+                    заказать
+                    <img src="./icons/arrow.svg" alt="">
+                  </a>
+                </td>
+              </tr>
+              <tr class="swiper-transform__main-content">
+                <td class="swiper-transform__main-content--item">Замена дисплея</td>
+                <td class="swiper-transform__main-content--item">1 000 ₽</td>
+                <td class="swiper-transform__main-content--item">30-120 мин</td>
+                <td class="swiper-transform__main-content--item">
+                  <a href="" class="order">
+                    заказать
+                    <img src="./icons/arrow.svg" alt="">
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
         <div class="phone">
-          <li class="icon">
+          <ul class="exit-phone-container">
             <a href="#" class="exit-phone">
-              <img src="icons/exit.svg" alt="выход" />
+              <li class="icon">
+                  <img src="icons/exit.svg" alt="выход" />
+              </li>
             </a>
-          </li>
+          </ul>
           <ul class="phone-header">
             <li><img src="icons/highlight.svg" alt="" /></li>
             <li><p>Заказать звонок</p></li>
@@ -488,16 +528,21 @@
                 на обработку персональных данных <br>
                 и соглашаетесь с нашей политикой <br>
                 конфиденциальности</p>
-              <a href="#" class="send"><img src="./icons/send.svg" alt=""></a>
+              <a href="#" class="order">
+                отправить
+                <img src="./icons/arrow.svg" alt="">
+              </a>
             </div>
           </ul>
         </div>
         <div class="chat">
-          <li class="icon">
+          <ul class="exit-phone-container">
             <a href="#" class="exit-chat">
-              <img src="icons/exit.svg" alt="выход" />
+              <li class="icon">
+                  <img src="icons/exit.svg" alt="выход" />
+              </li>
             </a>
-          </li>
+          </ul>
           <ul class="chat-header">
             <li><img src="icons/highlight.svg" alt="" /></li>
             <li><p>Обратная связь</p></li>
@@ -524,7 +569,10 @@
                 на обработку персональных данных <br>
                 и соглашаетесь с нашей политикой <br>
                 конфиденциальности</p>
-              <a href="#" class="send"><img src="./icons/send.svg" alt=""></a>
+              <a href="#" class="order">
+                отправить
+                <img src="./icons/arrow.svg" alt="">
+              </a>
             </div>
           </ul>
         </div>
