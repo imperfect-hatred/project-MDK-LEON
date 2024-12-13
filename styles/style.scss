@@ -109,6 +109,15 @@ li {
   transition: color 0.5s;
 }
 
+.desktop__header--bot_mail:hover {
+  color: $main-color !important;
+  transition: color 0.5s;
+}
+.desktop__header--bot_number:hover {
+  color: $main-color;
+  transition: color 0.5s;
+}
+
 .link__active {
   color: #7e7e82 !important;
 }
@@ -124,7 +133,6 @@ li {
   border-radius: 4px;
   background-color: $secondary-color;
 }
-
 
 .overlay__open {
   display: flex;
@@ -281,6 +289,7 @@ li {
 .read-more {
   padding-left: 20px;
 }
+
 .read-less {
   padding-left: 5px;
 }
@@ -298,12 +307,22 @@ li {
   gap: 10px;
 }
 
+#readMoreLink:hover {
+  color: $main-color;
+  transition: color 0.5s;
+}
+
 #readLessLink {
   display: none;
   align-items: center;
   padding-left: 50px;
   padding-left: 14px !important;
   gap: 10px;
+}
+
+#readLessLink:hover {
+  color: $main-color;
+  transition: color 0.5s;
 }
 
 #moreText {
@@ -322,26 +341,21 @@ li {
     display: grid !important;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 30px;
-    grid-row-gap: 30px;
-    align-items: center;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
   }
 }
 
 .swiper-slide {
-  padding: 10px;
   background-color: #ffffff;
-  border-radius: 5px;
-  display: flex;
-  justify-content: center;
   align-items: center;
   border-radius: 5px !important;
-  border: black !important;
+  border: rgb(0, 0, 0) !important;
   display: flex !important;
   justify-content: space-between !important;
   @media (max-width: $desktop-width) {
-    height: 80px !important;
-    width: 300px !important;
+    height: 72px !important;
+    width: 240px !important;
   }
 }
 
@@ -352,13 +366,21 @@ li {
 }
 
 .mySwiper {
-  height: 170px;
+  height: 140px;
+  &-tech {
+    height: 230px;
+  }
+  &-price {
+    height: 270px;
+  }
   &-slide__tech {
-    height: 300px !important;
+    height: 160px !important;
   }
   &-slide__price {
-    height: 500px !important;
-    gap: 10px;
+    height: 200px !important;
+    width: 260px !important;
+    gap: 10px !important;
+    font-size: 14px;
   }
 }
 
@@ -366,6 +388,63 @@ li {
   @media (min-width: $tablet-width) {
     display: none;
   }
+}
+#readLessLink_swiper_other {
+  display: none;
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    gap: 10px;
+    width: 121px;
+    padding-left: 20px;
+  }
+}
+#readLessLink_swiper_other:hover {
+  color: $main-color;
+  transition: color 0.5s;
+}
+
+#readLessLink_swiper {
+  display: none;
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    gap: 10px;
+    width: 121px;
+    padding-left: 20px;
+  }
+}
+#readLessLink_swiper:hover {
+  color: $main-color;
+  transition: color 0.5s;
+}
+
+#readMoreLink_swiper_other {
+  display: none;
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 121px;
+    padding-left: 5px;
+  }
+}
+#readMoreLink_swiper_other:hover {
+  color: $main-color;
+  transition: color 0.5s;
+}
+
+#readMoreLink_swiper {
+  display: none;
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 121px;
+    padding-left: 5px;
+  }
+}
+#readMoreLink_swiper:hover {
+  color: $main-color;
+  transition: color 0.5s;
 }
 
 .swiper-transform {
@@ -375,12 +454,17 @@ li {
     &-body {
       background: #ffffff;
       border-radius: 100px;
+      td {
+        text-align: left;
+      }
     }
     &__header {
       color: #7e7e82;
       padding: 20px;
       &--list {
+        justify-items: left;
         padding-bottom: 20px;
+        padding-left: 30px;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: auto;
@@ -395,9 +479,13 @@ li {
       border: 0;
       padding-left: 20px;
       align-items: center;
+      justify-items: left;
       border-bottom: 1px solid #ddd;
 
       &--item {
+        display: flex;
+        flex-direction: row;
+
         padding: 10px;
         text-align: center;
       }
@@ -417,21 +505,46 @@ li {
 .slider-h {
   padding-bottom: 90px;
   padding-left: 40px;
-  @media (min-width: $desktop-width) {
-    padding-bottom: 190px;
+}
+
+.right-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: white;
+  border: 2px solid $main-color;
+  border-radius: 100%;
+  margin-right: 10px;
+  &-tech {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: white;
+    border: 2px solid $main-color;
+    border-radius: 100%;
+    margin-top: 90px;
+    margin-right: 20px;
   }
 }
 
-.circle {
-  padding-right: 20px;
-  &-tech {
-    padding-right: 40px;
-    padding-top: 60px;
-    @media (min-width: $desktop-width) {
-      padding-bottom: 120px;
-      padding-right: 20px;
-    }
-  }
+.right-button:hover {
+  background: pink;
+  border: none;
+  transition: background-color 0.5s;
+  width: 44px;
+  height: 44px;
+}
+
+.right-button-tech:hover {
+  background-color: pink;
+  width: 44px;
+  height: 44px;
+  border: none;
+  transition: background-color 0.5s;
 }
 
 .slider-text-list {
@@ -440,8 +553,6 @@ li {
   flex-direction: column;
   gap: 10px;
   padding-left: 20px;
-  padding-right: 20px;
-
   &__h {
     color: #7e7e82;
   }
@@ -452,9 +563,9 @@ li {
 
 .order {
   display: flex;
-  flex-direction: row;
   gap: 10px;
   width: 100px;
+  height: 16px;
   background: $main-color;
   padding-left: 20px;
   padding-right: 30px;
@@ -466,29 +577,50 @@ li {
   font-size: 15px;
   &-swiper {
     position: absolute;
-    left: 150px;
+    left: 130px;
     margin-top: 95px;
     display: flex;
     flex-direction: row;
     gap: 10px;
-    width: 90px;
+    width: 80px;
     background: $main-color;
-    padding-left: 20px;
-    padding-right: 30px;
+    padding-left: 10px;
+    padding-right: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 20px;
     color: white;
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 14px;
   }
+}
+
+.order:hover {
+  background-color: white;
+  color: $main-color;
+  width: 100px;
+  height: 16px;
+  padding-left: 20px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid $main-color;
+  transition: background-color 0.5s, color 0.5s, border 0.5s;
+}
+
+.order-swiper:hover {
+  background-color: white;
+  color: $main-color;
+  height: 16px;
+  border: 1px solid $main-color;
+  transition: background-color 0.5s, color 0.5s, border 0.5s;
 }
 
 .phone {
   width: $mobile-width;
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   display: none;
   z-index: 11;
   height: 100%;
@@ -543,7 +675,7 @@ input {
   width: $mobile-width;
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   display: none;
   z-index: 11;
   height: 100%;
@@ -581,18 +713,32 @@ input {
 }
 
 .footer {
-  display: flex;
-  flex-direction: column;
   padding-left: 20px;
-  &__bottom-text {
+  color: #7e7e82;
+  &__mid-text {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 20px;
+    margin-bottom: 60px;
+    width: 220px;
+    &:hover {
+      color: $main-color;
+      transition: color 0.5s;
+    }
+  }
+  &__bottom-text {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: auto;
     color: #7e7e82;
+    align-items: left;
+    padding-bottom: 20px;
     @media (min-width: $tablet-width) {
       display: flex;
       flex-direction: row;
+      gap: 20px;
     }
   }
 }
